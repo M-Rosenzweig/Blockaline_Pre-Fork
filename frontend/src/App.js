@@ -21,8 +21,9 @@ function App() {
     })
   }, [])
 
-  console.log(jobs)
-
+  useEffect(() => {
+    document.body.style.overflow ='hidden';
+}, [])
 
 
 
@@ -34,7 +35,7 @@ function App() {
     <Routes>
 
     <Route path="/" element={<Home />}/>
-    <Route path="/results" element={<Results />}/>
+    <Route path="/results" element={<Results jobs={jobs} />}/>
 
     </Routes>
 
