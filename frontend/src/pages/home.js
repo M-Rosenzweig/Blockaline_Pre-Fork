@@ -19,8 +19,17 @@ function Home() {
         <option value="Cyber Se">Cyber Security</option>
         <option value="milk">UX Design</option>
     </select>
-      </div>
+
+    <select className='select' name="Location" required>
+        <option value="" disabled selected hidden>Choose Your Location</option>
+        <option value="coffee">New York</option>
+        <option value="tea">Los Angeles</option>
+        <option value="Cyber Se">Austin</option>
+        <option value="milk">Chicago</option>
+    </select>
+  </div>
         
+    <img src="../pics/giphy.gif" alt="Hexagon Blocks Animation"></img>
 
     </div>
     
