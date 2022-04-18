@@ -1,10 +1,10 @@
 import React from 'react'
 import './missions.css';
 
-function missions() {
+function Missions() {
   return (
     <div>missions</div>
   )
 }
 
-export default missions
+export default Missions

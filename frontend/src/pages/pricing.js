@@ -1,10 +1,10 @@
 import React from 'react'
 import './pricing.css';
 
-function pricing() {
+function Pricing() {
   return (
-    <div>pricing</div>
+    <div>Pricing</div>
   )
 }
 
-export default pricing
+export default Pricing

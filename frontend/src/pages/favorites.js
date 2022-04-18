@@ -2,10 +2,10 @@ import React from 'react'
 import './favorites.css';
 
 
-function favorites() {
+function Favorites() {
   return (
     <div>favorites</div>
   )
 }
 
-export default favorites
+export default Favorites
