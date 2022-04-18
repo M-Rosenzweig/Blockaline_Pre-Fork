@@ -2,10 +2,27 @@
     display: grid;
     justify-content: center;
 }
-
-#jobcontainer {
+#totalparent {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#jobpreviewcontainer {
     background-color: lightgray;
     margin-top: 10vh;
     height: 70vh;
-    width: 80vw;
+    width: 26vw;
+    overflow-y: auto;
 }
+
+#jobpreview {
+    border: 2px solid black;
+    height: 16vh;
+}
+
+#positionsummary {
+    background-color: blue;
+    margin-top: 10vh;
+    height: 70vh;
+    width: 50vw;
+}
+
