@@ -3,7 +3,16 @@ import './home.css';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='master'>
+    
+      <div className='message'>
+      <h1 className='Title'> Don't Work - Align </h1>
+      </div>
+   
+
+
+
+    </div>
   )
 }
 
