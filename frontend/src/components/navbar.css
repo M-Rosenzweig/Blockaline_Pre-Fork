@@ -1,6 +1,6 @@
 .Nav {
     background-color: rgba(58, 58, 58);
-    height: 6.8vh;
+    padding:1%;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
