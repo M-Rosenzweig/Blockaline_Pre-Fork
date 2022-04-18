@@ -1,10 +1,10 @@
 import React from 'react'
 import './results.css';
 
-function results() {
+function Results() {
   return (
-    <div>results</div>
+    <div>Results</div>
   )
 }
 
-export default results
+export default Results

@@ -1,10 +1,10 @@
 import React from 'react'
 import './jobcard.css';
 
-function jobcard() {
+function Jobcard() {
   return (
     <div>jobcard</div>
   )
 }
 
-export default jobcard
+export default Jobcard

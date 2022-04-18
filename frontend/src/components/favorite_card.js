@@ -1,10 +1,10 @@
 import React from 'react'
 import './favorite_card.css';
 
-function favorite_card() {
+function Favorite_card() {
   return (
-    <div>favorite_card</div>
+    <div>Favorite_card</div>
   )
 }
 
-export default favorite_card
+export default Favorite_card

@@ -1,10 +1,10 @@
 import React from 'react'
 import './apply.css';
 
-function apply() {
+function Apply() {
   return (
     <div>apply</div>
   )
 }
 
-export default apply
+export default Apply
