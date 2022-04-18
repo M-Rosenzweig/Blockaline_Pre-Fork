@@ -1,9 +1,15 @@
 import React from 'react'
 import './results.css';
+import Jobcard from '../components/jobcard';
 
 function Results() {
+
   return (
-    <div>Results</div>
+    <div id="resultspage">
+      <div id="jobcontainer">
+        <Jobcard />
+      </div>
+    </div>
   )
 }
 
