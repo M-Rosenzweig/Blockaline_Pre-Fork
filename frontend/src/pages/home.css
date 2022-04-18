@@ -1,21 +1,25 @@
 .master {
     background-image: url(../pics/blockBlack.jpg);
-    height: 100vh;
-    
+    height: 90.6vh;
+    display: block;
+    /* margin:0%; */
     /* display: flex; */
 
 }
 
-.message {
-    /* background-color: rgb(92, 69, 69); */
-    width: 30vw;
-    /* height: 16vh; */
-    margin-left: 35vw;
-    margin-top: 3.5vh;
-    /* opacity: 80%; */
+.select {
+    padding:1%;
 }
 
 .Title {
     font-size: 400%;
     color: white;
+    display:inline-block;
+    cursor:default;
+    /* margin:auto; */
+    width: auto;
+}
+
+.subtitle {
+    color:antiquewhite;
 }
