@@ -12,6 +12,13 @@ function Signup() {
         <div id="signups">
         <input className='signupinput' placeholder='Enter Username'></input>
         <input className='signupinput' placeholder='Enter Password'></input>
+        <select className='signupinput'>
+          <option value="frontier" disabled hidden> Choose Frontier</option>
+          <option >Data Science</option>
+          <option>Software Engineering</option>
+          <option>Cyber Security</option>
+          <option>UX Design</option>
+        </select>
         <button id="signupbutton" className='signupinput' >Login</button>
         </div>
         <div id="login">
