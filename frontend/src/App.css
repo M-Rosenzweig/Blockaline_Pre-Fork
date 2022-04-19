@@ -1,3 +1,7 @@
+body {
+  background-image: url(./pics/blockBlack.jpg);
+}
+
 .App {
   text-align: center;
 }
