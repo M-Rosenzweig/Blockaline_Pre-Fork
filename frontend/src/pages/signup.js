@@ -10,8 +10,8 @@ function Signup() {
         <h2>You deserve a job that loves you back</h2>
         <h3>Sign up and begin to Aline</h3>
         <div id="signups">
-        <input className='signupinput' placeholder='Enter Username'></input>
-        <input className='signupinput' placeholder='Enter Password'></input>
+        <input className='signupinput' placeholder='Enter Your Email'></input>
+        <input className='signupinput' placeholder='Create Password'></input>
         <select className='signupinput'>
           <option value="frontier" disabled hidden> Choose Frontier</option>
           <option >Data Science</option>
