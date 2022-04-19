@@ -14,7 +14,6 @@ function Signup() {
 
   function handlePassword (e) {
     setPassword(e.target.value)
-    console.log(password)
   }
 
   function handleFrontier(e) {
