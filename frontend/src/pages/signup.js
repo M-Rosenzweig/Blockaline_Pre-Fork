@@ -3,6 +3,7 @@ import './signup.css';
 import { Link } from 'react-router-dom'
 
 function Signup() {
+  // const 
   return (
     <div id="signupparent">
       <div id="signupbox">

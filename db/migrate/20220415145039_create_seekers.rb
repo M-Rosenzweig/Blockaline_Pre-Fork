@@ -3,8 +3,7 @@ class CreateSeekers < ActiveRecord::Migration[7.0]
     create_table :seekers do |t|
       t.string :name
       t.string :email
-      t.string :profession
-      t.boolean :resume
+      t.string :frontier
       t.string :password_digest
       
 

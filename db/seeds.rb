@@ -4,8 +4,8 @@
 # Company.destroy_all
 # Favorite.destroy_all
 
-s1 = Seeker.create(name:'Alex', email:'alex.manzi22@gmail.com', profession:'Software Engineer', resume: false, password_digest:"Alex")
-s2 = Seeker.create(name:'Moshe', email:'rosenvibes@gmail.com', profession:'Software Engineer', resume: false, password_digest:"Moish")
+s1 = Seeker.create(name:'Alex', email:'alex.manzi22@gmail.com', frontier:'Software Engineer', password_digest:"Alex")
+s2 = Seeker.create(name:'Moshe', email:'rosenvibes@gmail.com', frontier:'Software Engineer', password_digest:"Moish")
 
 
 c1 = Company.create(title:'Flatiron', mission_statement:'We’re committed to helping people learn the skills they need to change their lives and the world for the better.', tags: 'Positive, Upbeat, Fun', rating:5)
