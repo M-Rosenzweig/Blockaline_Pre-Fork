@@ -1,7 +1,8 @@
 class SeekersController < ApplicationController
     
     def create
-        seeker = Seeker.create!(params.permit(:name, :email, :profession, :resume))
+        byebug
+        seeker = Seeker.create!(params.permit(:name, :email, :frontier))
         session[:seeker_id] ||= seeker.id
         render json: seeker, status: :created
     rescue ActiveRecord::RecordInvalid => invalid
