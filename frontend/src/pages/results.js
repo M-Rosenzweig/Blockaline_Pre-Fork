@@ -2,7 +2,10 @@ import React from 'react'
 import './results.css';
 import Jobcard from '../components/jobcard';
 
-function Results({jobs}) {
+function Results({jobs,frontier,location}) {
+  
+  console.log(frontier);
+  console.log(location);
 
   let jobsMap = jobs.map(job => {
     return (

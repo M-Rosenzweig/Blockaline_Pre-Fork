@@ -12,6 +12,8 @@ import Navbar from './components/navbar';
 function App() {
 
   let [jobs, setJobs] = useState([])
+  const [frontier, setFrontier] = useState("")
+  const [location, setLocation] = useState("")
 
   useEffect(() => {
     fetch("http://localhost:4000/jobs")
@@ -25,6 +27,10 @@ function App() {
     document.body.style.overflow ='hidden';
 }, [])
 
+  function formData(frontier,location) {
+   setFrontier(frontier)
+   setLocation(location)
+  }
 
 
   return (
@@ -34,8 +40,8 @@ function App() {
 
     <Routes>
 
-    <Route path="/" element={<Home />}/>
-    <Route path="/results" element={<Results jobs={jobs} />}/>
+    <Route path="/" element={<Home formData={formData} />}/>
+    <Route path="/results" element={<Results location={location} frontier={frontier} jobs={jobs} />}/>
 
     </Routes>
 
