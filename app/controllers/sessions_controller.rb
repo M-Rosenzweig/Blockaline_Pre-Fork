@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
-    
+
     def create
+        byebug
         seeker = Seeker.find_by(email: params[:email])
         if user&.authenticate(params[:password])
             session[:seeker] = seeker.id
