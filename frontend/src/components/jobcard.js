@@ -1,13 +1,10 @@
 import React from 'react'
 import './jobcard.css';
-import Jobsummarycard from './jobsummarycard';
 
-function Jobcard({job}) {
-
-
+function Jobcard({job, displayNewCard}) {
 
   return (
-    <div>
+    <div onClick={()=> displayNewCard(job)}>
       <h3>{job.title}</h3>
       <h4>{job.description}</h4>
       <h4>{job.benefits}</h4>
