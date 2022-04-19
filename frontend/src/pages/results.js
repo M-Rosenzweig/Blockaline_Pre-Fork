@@ -29,8 +29,8 @@ function Results({jobs,frontier,location, displayNewCard, summary}) {
     <div id="resultspage">
       <div id="totalparent">
       <div id="jobpreviewcontainer">
-        <div id="jobpreview">
-        {jobsMap}
+        <div>
+          {jobsMap}
         </div>
       </div>
       <div id="positionsummary">

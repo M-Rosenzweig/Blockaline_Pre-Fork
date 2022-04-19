@@ -14,11 +14,6 @@
     overflow-y: auto;
 }
 
-#jobpreview {
-    border: 2px solid black;
-    height: 16vh;
-}
-
 #positionsummary {
     background-color: blue;
     margin-top: 10vh;
