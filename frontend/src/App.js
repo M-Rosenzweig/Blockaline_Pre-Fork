@@ -17,6 +17,8 @@ function App() {
   const [location, setLocation] = useState("")
   let [summary, setSummary] = useState([])
 
+  console.log(jobs)
+
   useEffect(() => {
     fetch("http://localhost:4000/jobs")
     .then(resp => resp.json())
