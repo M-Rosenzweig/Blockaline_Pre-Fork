@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import Results from "./pages/results"
 import Navbar from './components/navbar';
+import Login from './pages/login';
 
 
 
@@ -47,6 +48,10 @@ function App() {
 
     <Route path="/" element={<Home formData={formData} />}/>
     <Route path="/results" element={<Results location={location} frontier={frontier} jobs={jobs} displayNewCard={displayNewCard} summary={summary} />}/>
+
+    <Route path="/login" element={<Login/>}/>
+    <Route path="/results" element={<Results location={location} frontier={frontier} jobs={jobs} />}/>
+
 
     </Routes>
 
