@@ -43,6 +43,10 @@ function Signup() {
         <h2>Align Your Life</h2>
         <h3>Join Blockaline</h3>
         <div id="signups">
+          <div id="names">
+        <input className='nameinput' placeholder='Enter Your First Name' onChange={handleEmail}></input>
+        <input className='nameinput' placeholder='Enter Your Last Name' onChange={handleEmail}></input>
+          </div>
         <input className='signupinput' placeholder='Enter Your Email' onChange={handleEmail}></input>
         <input type="password" className='signupinput' placeholder='Create Password' onChange={handlePassword}></input>
         <select defaultValue="frontier" className='signupinput' onChange={handleFrontier}>
