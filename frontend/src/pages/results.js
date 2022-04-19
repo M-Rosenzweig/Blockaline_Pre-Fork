@@ -1,8 +1,9 @@
 import React from 'react'
 import './results.css';
 import Jobcard from '../components/jobcard';
+import Jobsummarycard from '../components/jobsummarycard';
 
-function Results({jobs,frontier,location}) {
+function Results({jobs,frontier,location, displayNewCard, summary}) {
   
   console.log(frontier);
   console.log(location);
@@ -12,9 +13,16 @@ function Results({jobs,frontier,location}) {
       <Jobcard
         key={job.id}
         job={job}
+        displayNewCard={displayNewCard}
         />
     )
   })
+
+  let jobsSummaryMap = 
+      <Jobsummarycard
+        key={summary.id}
+        summary={summary}
+        />
 
 
   return (
@@ -23,15 +31,10 @@ function Results({jobs,frontier,location}) {
       <div id="jobpreviewcontainer">
         <div id="jobpreview">
         {jobsMap}
-        {jobsMap}
-        {jobsMap}
-        {jobsMap}
-        {jobsMap}
-        {jobsMap}
-        {jobsMap}
         </div>
       </div>
       <div id="positionsummary">
+        {jobsSummaryMap}
       </div>
       </div>
     </div>

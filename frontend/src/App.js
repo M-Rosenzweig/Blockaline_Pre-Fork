@@ -15,6 +15,7 @@ function App() {
   let [jobs, setJobs] = useState([])
   const [frontier, setFrontier] = useState("")
   const [location, setLocation] = useState("")
+  let [summary, setSummary] = useState([])
 
   useEffect(() => {
     fetch("http://localhost:4000/jobs")
@@ -33,6 +34,10 @@ function App() {
    setLocation(location)
   }
 
+  function displayNewCard(summary) {
+    setSummary(summary)
+  }
+
 
   return (
     <div className="App">
@@ -42,8 +47,11 @@ function App() {
     <Routes>
 
     <Route path="/" element={<Home formData={formData} />}/>
+    <Route path="/results" element={<Results location={location} frontier={frontier} jobs={jobs} displayNewCard={displayNewCard} summary={summary} />}/>
+
     <Route path="/login" element={<Login/>}/>
     <Route path="/results" element={<Results location={location} frontier={frontier} jobs={jobs} />}/>
+
 
     </Routes>
 

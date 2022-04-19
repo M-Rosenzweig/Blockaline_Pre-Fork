@@ -24,6 +24,10 @@ c13 = Company.create(title:'Intel', mission_statement:'Utilize the power of Moor
 
 
 j1 =Job.create(title:"Flatiron Ceo", description:"Be a Boss", company:c1, benefits:"Cash", remote:false, hybrid: true)
+j1 =Job.create(title:"Google Ceo", description:"Be a Boss", company:c2, benefits:"Cash", remote:false, hybrid: true)
+j1 =Job.create(title:"Amazon Ceo", description:"Be a Boss", company:c3, benefits:"Cash", remote:false, hybrid: true)
+j1 =Job.create(title:"Facebook Ceo", description:"Be a Boss", company:c4, benefits:"Cash", remote:false, hybrid: true)
+j1 =Job.create(title:"Spotify Ceo", description:"Be a Boss", company:c5, benefits:"Cash", remote:false, hybrid: true)
 
 Application.create(seeker:s1, job:j1, accepted:false)
 Application.create(seeker:s2, job:j1, accepted:false)
