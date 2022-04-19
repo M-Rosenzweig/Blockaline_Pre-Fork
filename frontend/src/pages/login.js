@@ -39,7 +39,7 @@ function Login() {
         <h2>You deserve a job that loves you back</h2>
         <h3>Continue to Aline</h3>
         <div id="logins">
-        <input className='logininput' placeholder='Enter Username' onChange={setEmailFunction}></input>
+        <input className='logininput' placeholder='Enter Email' onChange={setEmailFunction}></input>
         <input className='logininput' placeholder='Enter Password' onChange={setPasswordFunction}></input>
         <button id="loginbutton" className='logininput' onClick={handleLogin} >Login</button>
         </div>

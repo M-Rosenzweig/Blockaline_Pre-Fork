@@ -9,7 +9,7 @@
 #signupbox {
     margin-top: 15vh;
     padding-top: 4vh;
-    height: 50vh;
+    height: 55vh;
     width: 40vw;
     background-color: lightgray;
     border-radius: 5px;
@@ -42,13 +42,14 @@
 
 #login {
     display: grid;
-    grid-template-columns: 12vw 6vw;
+    grid-template-columns: 14vw 8vw;
     justify-content: center;
-    padding-top: 5vh;
-    padding-right: 7vh;
+    padding-top: 11vh;
+    padding-right: 2vh;
 }
 
 #larea {
     font-weight: bold;
     color: green;
+    margin-left: -4vw;
 }
