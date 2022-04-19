@@ -14,6 +14,7 @@ function Signup() {
 
   function handlePassword (e) {
     setPassword(e.target.value)
+    console.log(password)
   }
 
   function handleFrontier(e) {
@@ -43,7 +44,7 @@ function Signup() {
         <h3>Join Blockaline</h3>
         <div id="signups">
         <input className='signupinput' placeholder='Enter Your Email' onChange={handleEmail}></input>
-        <input className='signupinput' placeholder='Create Password' onChange={handlePassword}></input>
+        <input type="password" className='signupinput' placeholder='Create Password' onChange={handlePassword}></input>
         <select defaultValue="frontier" className='signupinput' onChange={handleFrontier}>
           <option value="frontier" disabled hidden> Choose Frontier</option>
           <option >Data Science</option>
