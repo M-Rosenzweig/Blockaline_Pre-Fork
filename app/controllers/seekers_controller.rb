@@ -1,4 +1,5 @@
 class SeekersController < ApplicationController
+    
     def create
         seeker = Seeker.create!(params.permit(:name, :email, :profession, :resume))
         session[:seeker_id] ||= seeker.id

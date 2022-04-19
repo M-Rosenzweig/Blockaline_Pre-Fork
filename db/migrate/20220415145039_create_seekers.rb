@@ -5,6 +5,8 @@ class CreateSeekers < ActiveRecord::Migration[7.0]
       t.string :email
       t.string :profession
       t.boolean :resume
+      t.string :password_digest
+      
 
       t.timestamps
     end
