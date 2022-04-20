@@ -7,6 +7,8 @@ function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [frontier, setFrontier] = useState('')
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
 
   function handleEmail(e) {
     setEmail(e.target.value)
@@ -20,6 +22,24 @@ function Signup() {
     setFrontier(e.target.value)
   }
 
+  function handleFirstName(e) {
+    setFirstName(e.target.value)
+    console.log(firstName);
+  }
+
+  function handleLastName(e){
+    setLastName(e.target.value)
+  }
+
+  function handleFormSubmit(e){
+    e.preventDefault();
+    setFirstName('')
+    setLastName('')
+    setEmail('')
+    setPassword('')
+    setFrontier('frontier')
+  }
+
   function handleSubmit() {
     fetch("http://localhost:4000/seekers", {
       method: "POST",
@@ -27,6 +47,8 @@ function Signup() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
+        first_name:firstName,
+        last_name: lastName,
         email: email,
         password: password,
         frontier: frontier
@@ -37,18 +59,19 @@ function Signup() {
   }
 
   return (
+  <form onSubmit={handleFormSubmit}>
     <div id="signupparent">
       <div id="signupbox">
         <h2>Align Your Life</h2>
         <h3>Join Blockaline</h3>
         <div id="signups">
           <div id="names">
-        <input className='nameinput' placeholder='Enter Your First Name' onChange={handleEmail}></input>
-        <input className='nameinput' placeholder='Enter Your Last Name' onChange={handleEmail}></input>
+        <input className='nameinput' placeholder='First Name' value={firstName} onChange={handleFirstName}></input>
+        <input className='nameinput' placeholder='Last Name' value={lastName} onChange={handleLastName}></input>
           </div>
-        <input className='signupinput' placeholder='Enter Your Email' onChange={handleEmail}></input>
-        <input type="password" className='signupinput' placeholder='Create Password' onChange={handlePassword}></input>
-        <select defaultValue="frontier" className='signupinput' onChange={handleFrontier}>
+        <input className='signupinput' placeholder='Enter Your Email' value={email} onChange={handleEmail}></input>
+        <input type="password" className='signupinput' placeholder='Create Password' value={password} onChange={handlePassword}></input>
+        <select defaultValue="frontier" className='signupinput' value={frontier} onChange={handleFrontier}>
           <option value="frontier" disabled hidden> Choose Frontier</option>
           <option >Data Science</option>
           <option>Software Engineering</option>
@@ -62,6 +85,7 @@ function Signup() {
         </div>
       </div>
     </div>
+  </form>
   )
 }
 

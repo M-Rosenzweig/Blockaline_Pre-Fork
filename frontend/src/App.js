@@ -16,9 +16,20 @@ function App() {
   let [jobs, setJobs] = useState([])
   const [frontier, setFrontier] = useState("")
   const [location, setLocation] = useState("")
+  const [seeker, setSeeker] = useState(null)
   let [summary, setSummary] = useState([])
 
-  console.log(jobs)
+  useEffect(() => {
+    // auto-login
+    fetch("http://localhost:4000/me").then((r) => {
+      if (r.ok) {
+        r.json().then((seekerData) => console.log(seekerData));
+      }
+    });
+  }, []);
+
+  console.log(seeker)
+  console.log(jobs);
 
   useEffect(() => {
     fetch("http://localhost:4000/jobs")

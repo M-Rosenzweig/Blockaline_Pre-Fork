@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   resources :companies
   resources :seekers
   resources :sessions, only:[:create, :destroy]
+  get "/me", to: "seekers#show"
+
 
 end

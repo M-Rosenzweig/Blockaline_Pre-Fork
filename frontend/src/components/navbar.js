@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <div className='Nav'>
-
+      
       <NavLink className='logo' to="/">Blockaline</NavLink>
 
 
