@@ -46,6 +46,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_15_145348) do
     t.boolean "remote"
     t.boolean "hybrid"
     t.integer "company_id", null: false
+    t.string "salary"
+    t.string "logo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["company_id"], name: "index_jobs_on_company_id"

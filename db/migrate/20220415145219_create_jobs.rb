@@ -7,6 +7,8 @@ class CreateJobs < ActiveRecord::Migration[7.0]
       t.boolean :remote
       t.boolean :hybrid
       t.references :company, null: false, foreign_key: true
+      t.string :salary
+      t.string :logo
 
       t.timestamps
     end
